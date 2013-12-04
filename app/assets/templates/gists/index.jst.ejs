@@ -1,0 +1,7 @@
+<h1><%= title %></h1>
+
+<% gists.each(function(gist) { %>
+	<a href="#/gists/<%= gist.id %>"><%= gist.escape("title") %></a><br>
+<% }); %>
+
+<p><a href="#/gists/new">Create A New Gist!</a></p>
